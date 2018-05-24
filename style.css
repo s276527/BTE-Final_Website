@@ -1,72 +1,71 @@
 body, html {
-    height: 100%;
-    margin: 0;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+    height: 100%;
+    margin: 0;
 }
-header  {
-  background: #2f496e;
-  color: white;
-  font-size: 1em;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+
+header {
+    background: #2f496e;
+    color: white;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
-.logo{
-  color: inherit;
-  float: left;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline;
-  padding: 10px 15px 1px;
-  font-size: 24px;
+
+.logo {
+    color: inherit;
+    display: inline;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 15px 1px;
+    text-decoration: none;
 }
 
 nav ul {
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 5px;
-  margin: 0px;
-  text-align: right;
-  -webkit-transition: max-height 0.4s;
-  -ms-transition: max-height 0.4s;
-  -moz-transition: max-height 0.4s;
-  -o-transition: max-height 0.4s;
-  transition: max-height 0.4s;
-
+    -moz-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    -webkit-transition: max-height 0.4s;
+    box-sizing: border-box;
+    margin: 0px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: right;
+    transition: max-height 0.4s;
 }
+
 header ul li {
-  color: inherit;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 15px 1px;
-
+    color: inherit;
+    display: inline-block;
+    padding: 10px 15px 1px;
+    text-decoration: none;
 }
 
-header ul li:hover {
-  text-decoration: underline;
-}
-.handle{
-  width: 100%;
-  text-align:left;
-  box-sizing: border-box;
-  padding: 5px;
-  cursor: pointer;
-  display: none;
+header ul li:hover { text-decoration: underline; }
+
+.handle {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: none;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
 }
 
 
 .pimg1, .pimg2, .pimg3, .pimg4 {
-    position: relative;
-    opacity: 0.80;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
     /*
         Parallax scroll turned off on mobiles
     */
     background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.80;
+    position: relative;
 }
 
 .pimg1 {
@@ -78,17 +77,20 @@ header ul li:hover {
     background-image: url('Img/Burger.jpg');
     min-height: 100%;
 }
+
 .pimg3 {
     background-image: url('Img/Cake.jpeg');
     min-height: 100%;
 }
+
 .pimg4 {
     background-image: url('Img/Pancakes.jpeg');
     min-height: 100%;
 }
+
 .section {
-    text-align: center;
     padding: 50px 80px;
+    text-align: center;
 }
 
 .section-light {
@@ -102,166 +104,159 @@ header ul li:hover {
 }
 
 .ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
     color: #000;
     font-size: 27px;
     letter-spacing: 8px;
+    position: absolute;
+    text-align: center;
     text-transform: uppercase;
+    top: 50%;
+    width: 100%;
 }
 
 
 .ptext .border {
     background-color: #2f496e;
+    border-radius: 10px;
     color: white;
     padding: 20px;
-    border-radius: 10px;
 }
 
 a {
+    color: inherit;
+    font-weight: bold;
     text-decoration: none;
+}
+
+.icons { font-size: 25px; }
+
+.fa { padding: 15px; }
+
+.tab { overflow: hidden; }
+
+.tablinks {
     color: inherit;
     font-weight: bold;
 }
-.icons {
-    font-size: 25px;
+
+.tablinks.active {
+    background: #283655;
+    color: white;
 }
 
-.fa {
-  padding: 15px;
-}
-
-.tab{
-  overflow: hidden;
-
-  }
-
-  .tablinks{
-    color: inherit;
-    font-weight: bold;
-  }
-
-  .tablinks.active{
-     background: #283655;
-     color: white;
-  }
-
-  .tab button{
+.tab button {
     background-color: inherit;
-    float: left;
-    display: block;
     border: none;
-    outline: 1px solid #ccc;
     cursor: pointer;
-    padding: 15px;
+    display: block;
+    float: left;
     font-size: 15px;
+    outline: 1px solid #ccc;
+    padding: 15px;
     transition: 0.3s;
-  }
+}
 
 .ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
     color: #000;
     font-size: 27px;
     letter-spacing: 8px;
+    position: absolute;
+    text-align: center;
     text-transform: uppercase;
+    top: 50%;
+    width: 100%;
 }
 
-.wrapper{
-  width: 100%;
-  margin:auto;
-  max-width: 550px;
-  padding: 20px;
-  box-sizing: border-box;
+.wrapper {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 550px;
+    padding: 20px;
+    width: 100%;
 }
+
 .label {
-  margin: auto;
-  text-align: left;
+    margin: auto;
+    text-align: left;
 }
 
-input{
-  width: 100%;
-}
-textarea{
-  width: 100%;
-  min-height: 70px;
+input { width: 100%; }
+
+textarea {
+    min-height: 70px;
+    width: 100%;
 }
 
-label{
-  padding: 10px 0;
+label { padding: 10px 0; }
+
+.form {
+    margin: 25px 0;
+    width: 100%;
 }
 
-.form{
-  width: 100%;
-  margin: 25px 0;
+.top-form, .middle-form, .bottom-form {
+    margin: 10px;
+    min-height: 65px;
+    width: 100%;
 }
 
-.top-form, .middle-form, .bottom-form{
-  width: 100%;
-  min-height: 65px;
-  margin: 10px;
-}
-.inner-form{
-  padding: 5px 0;
-}
+.inner-form { padding: 5px 0; }
 
 input[type=submit] {
-  background-color: #d0e1f9;
-  color: #1e1f26;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-@media(max-width: 675px) {
-  nav ul{
-    max-height: 0;
-  }
-    nav ul li{
-      box-sizing: border-box;
-      width: 100%;
-      text-align: left;
-      padding: 10px;
-    }
-    .showing{
-      max-height: 20em;
-    }
-    .logo{
-      display: none;
-    }
-    .handle{
-      display: block;
-      text-align: right;
-      }
-
-    .tablinks{
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
+    background-color: #d0e1f9;
     border: none;
-    text-align: left;
-    outline: black;
-    font-size: 15px;
-    transition: 0.4s;
+    border-radius: 4px;
+    color: #1e1f26;
+    cursor: pointer;
+    max-width: 275px;
+    padding: 12px 20px;
 }
 
-        /* enable Parallax Scroll for pc*/
-        @media(min-width: 580px) {
-            .pimg1, .pimg2, .pimg3, .pimg4 {
-                background-attachment: fixed;
-            }
+@media (max-width: 675px) {
+    nav ul { max-height: 0; }
 
-        }
+    nav ul li {
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
 
-        @media(max-width: 380px) {
-            .ptext .border {
-                display: flex;
-            }
-        }
+    .showing { max-height: 20em; }
+
+    .logo { display: none; }
+
+    .handle {
+        display: block;
+        text-align: right;
+    }
+
+    .tablinks {
+        background-color: #eee;
+        border: none;
+        color: #444;
+        cursor: pointer;
+        font-size: 15px;
+        outline: black;
+        padding: 10px;
+        text-align: left;
+        transition: 0.4s;
+        width: 100%;
+    }
+
+    /* enable Parallax Scroll for pc*/
+    @media 
+
+    ( 
+
+    min-width: 580px 
+
+    ) {
+    
+
+    .pimg1, .pimg2, .pimg3, .pimg4 { background-attachment: fixed; }
+}
+
+@media (max-width: 380px) {
+    .ptext .border { display: flex; }
+}
