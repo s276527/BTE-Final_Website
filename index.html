@@ -9,499 +9,504 @@
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<header>
-    <nav class="topnav">
-        <div class="logo">
-            <span>Cool Spot Cafe</span>
-        </div>
-        <ul>
-            <a href="#home">
-                <li>Home</li>
-            </a>
-            <a href="#menu">
-                <li>Menus</li>
-            </a>
-            <a href="#reservation">
-                <li>Reservations</li>
-            </a>
-            <a href="#contact">
-                <li>Contact</li>
-            </a>
-        </ul>
-        <div class="handle">
-            <i class="fa fa-bars"></i>
-        </div>
-    </nav>
-</header>
 <body>
-<div class="pimg1" id="home">
-    <div class="ptext">
-        <span class="border">
-            Cool Spot Cafe
-        </span>
-    </div>
-</div>
-<section class="section section-dark">
-    <h2>About Us</h2>
-    <span>
-        Welcome to the Cool Spot Café situated at Fannie Bay. Whether you're a local or a visitor
-        I am sure you will enjoy a visit to the Cool Spot for a quick cup of coffee, tea, or a quick snack to a full meal.
-        True to its name if you want to cool down after a hot day enjoy a gelato and a cold drink in the air-conditioning.
-    </span>
-</section>
-<div class="pimg3" id="menu">
-    <div class="ptext">
-        <span class="border">
-            Menus
-        </span>
-    </div>
-</div>
-<section class="section section-light">
-
-<!-- w3 schools tabs https://www.w3schools.com/howto/howto_js_tabs.asp -->
-<div class="tab">
-    <button class="tablinks active" onclick="openMenu(event, 'Main')">Mains</button>
-    <button class="tablinks" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
-    <button class="tablinks" onclick="openMenu(event, 'Lunch')">Lunch</button>
-    <button class="tablinks" onclick="openMenu(event, 'Burgers')">Burgers</button>
-    <button class="tablinks" onclick="openMenu(event, 'Salads')">Salads</button>
-    <button class="tablinks" onclick="openMenu(event, 'Dessert')">Dessert</button>
-</div>
-<div id="Main" class="tabcontent" style="display: block;">
-    <h2>Main Menu</h2>
-
-    <h3>
-        <span>Riverina Black Angus Scotch Fillet Steak</span>
-        <span>$29.50</span>
-    </h3>
-    <p>
-        Grain Fed Scotch Fillet cooked to your liking and
-        served with chips, garden salad and homemade
-        mushroom sauce
-    </p>
-    <h3>
-        <span>Local Barramundi with Thai style Prawns</span>
-        <span>$32.00</span>
-    </h3>
-    <p>
-        Grilled Barramundi with panfried Local Prawns in a
-        lime, ginger & coriander glaze. Served with steamed
-        rice & broccolini
-    </p>
-    <h3>
-        <span>Local Barramundi & Chips</span>
-        <span>$28.00</span>
-    </h3>
-    <p>
-        Grilled Local Barramundi fillets served with chips,
-        garden salad and a side of our homemade herb aioli
-
-    </p>
-    <h3>
-        <span>Chicken Parmigiana</span>
-        <span>$22.00</span>
-    </h3>
-    <p>
-        Chicken Breast Schnitzel topped with homemade
-        napoli sauce and grated tasty cheese. Served with
-        chips and garden salad
-    </p>
-    <h3>
-        <span>Traditional Butter Chicken</span>
-        <span>$22.00</span>
-    </h3>
-    <p>
-        A classic mild North Indian Curry. Served with
-        steamed rice and papadums
-    </p>
-    <h3>
-        <span>Calamari & Chips</span>
-        <span>$22.00</span>
-    </h3>
-    <p>
-        Local crumbed Calamari served with homemade herb
-        aioli, lemon wedges, chips and garden salad
-    </p>
-    <h3>
-        <span>Chicken Schnitzel</span>
-        <span>$19.50</span>
-    </h3>
-    <p>
-        Chicken Breast Schnitzel served with chips, salad and
-        a side of gravy
-    </p>
-    <h3>
-        <span>Coopers Pale Ale Beer Battered Fish and Chips</span>
-        <span>$22.00</span>
-    </h3>
-    <p>
-        Freshly battered local fish served with chips, salad,
-        house tartare sauce and lemon wedges.
-        Please ask Staff for catch of the day!
-    </p>
-</div>
-<div id="Breakfast" class="tabcontent" style="display: none;">
-    <h2>Breakfast</h2>
-    <h3>
-        <span>Coolspot Big Breakfast</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        bacon, 2 fried eggs, sausage, tomato, mushrooms &
-        baked beans
-    </p>
-    <h3>
-        <span>Vegetarian Breakfast </span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        eggs scrambled or poached, mushrooms, spinach,
-        sliced avocado & grilled tomato
-    </p>
-    <h3>
-        <span>Eggs Benedict</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        poached eggs, fresh baby spinach, leg ham,
-        hollandaise sauce on turkish bread
-    </p>
-    <h3>
-        <span>Coolspot Omelette</span>
-        <span>$16.50</span>
-    </h3>
-    <p>
-        leg ham, tasty cheese, roasted red peppers &
-        mushrooms
-    </p>
-    <h3>
-        <span>Bacon & Egg Breakfast</span>
-        <span>$14.00</span>
-    </h3>
-    <p>
-        bacon, 2 fried, poached or scrambled eggs with grilled
-        tomato
-    </p>
-    <h3>
-        <span>Breakfast Brushetta </span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        basil & tomato mix, poached eggs, lean grilled ham off
-        the bone on toasted vienna
-    </p>
-    <h3>
-        <span>Breakfast Bowl</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        spanish poached eggs, chorizo, tomato, red pepppers
-        and fresh baby spinach
-    </p>
-    <h3>
-        <span>Fresh Seasonal Fruit Salad </span>
-        <span>$12.00</span>
-    </h3>
-    <p>
-        served with passionfruit & coconut shavings and your
-        choice of honey Cinnamon Yoghurt or Vanilla Ice
-        cream!
-    </p>
-</div>
-<div id="Lunch" class="tabcontent" style="display: none;">
-    <h2>Lunch</h2>
-    <h3>
-        <span>Salt & Pepper Squid</span>
-        <span>$15.00</span>
-    </h3>
-    <p>
-        served with a sweet chilli dipping sauce & homemade
-        herb aioli
-    </p>
-    <h3>
-        <span>Beef Nachos</span>
-        <span>$14.00</span>
-    </h3>
-    <p>
-        with sour cream & guacomole
-    </p>
-    <h3>
-        <span>Crispy grilled Chorizo</span>
-        <span>$14.00</span>
-    </h3>
-    <p>
-        grilled spicy chorizo served with a tomato chutney &
-        olives
-    </p>
-    <h3>
-        <span>Basil & Tomato Bruschetta</span>
-        <span>$12.00</span>
-    </h3>
-    <p>
-        basil & tomatoes on toasted vienna with balsamic
-        glaze and fresh baby spinach
-    </p>
-    <h3>
-        <span>Bacon & Egg Sandwich</span>
-        <span>$9.00</span>
-    </h3>
-    <p>
-        Served with white or multigrain bread
-    </p>
-    <h3>
-        <span>Bacon, Lettuce & Tomato</span>
-        <span>$9.00</span>
-    </h3>
-    <p>
-        Served with white or multigrain bread
-    </p>
-</div>
-<div id="Burgers" class="tabcontent" style="display: none;">
-    <h2>Burgers</h2>
-    <h3>
-        <span>Coolspot Hamburger with Bacon & Egg</span>
-        <span>$19.50</span>
-    </h3>
-    <p>
-        Homemade hamburger patty served with beerenberg
-        relish, bacon, fried egg, cheddar cheese, lettuce &
-        tomato
-    </p>
-    <h3>
-        <span>Coolspot Scotch Fillet Steak Burger</span>
-        <span>$19.50</span>
-    </h3>
-    <p>
-        Black Angus Scotch fillet steak with bacon, egg,
-        cheddar cheese, lettuce & tomato
-    </p>
-    <h3>
-        <span>Gourmet Chicken Burger</span>
-        <span>$19.50</span>
-    </h3>
-    <p>
-        Chicken Breast with bacon, guacamole, cheddar
-        cheese, lettuce, tomato & a side of homemade aioli
-    </p>
-    <h3>
-        <span>Chicken Schnitzel Burger</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        Chicken breast schnitzel with bacon, cheddar cheese,
-        lettuce, tomato and homemade aioli
-    </p>
-    <h3>
-        <span>Cheese Burger</span>
-        <span>$16.00</span>
-    </h3>
-    <p>
-        Homemade hamburger patty served with double
-        cheddar cheese, lettuce & tomato
-    </p>
-</div>
-<div id="Salads" class="tabcontent" style="display: none;">
-    <h2>Salads</h2>
-    <h3>
-        <span>Salt & Pepper Squid Salad</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        Local Squid served with mixed lettuce leaves, crunchy
-        shredded vegetabes, herb aioli and lemon wedges
-    </p>
-    <h3>
-        <span>Thai Chicken Salad</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        Marinated chicken breast with spicy sweet chilli &
-        lime dressing, fresh herbs, mixed greens, roasted
-        cashews & julienne vegetables
-    </p>
-    <h3>
-        <span>Warm Lamb Salad</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        Greek style lamb served with homemade garlic
-        yoghurt, mixed lettuce leaves, onions, tomatoes,
-        olives & toasted pita bread
-    </p>
-    <h3>
-        <span>Premium Tasmanian Smoked Salmon</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        Gourmet salad mix, toasted sesame seeds & our own
-        citrus dressing
-    </p>
-    <h3>
-        <span>Green Energy Salad topped with Bulgarian Feta</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        Sliced avocado, shredded cabbage, cherry tomatoes, a
-        julienne mix of carrot, fresh beetroot, capsicums,
-        spring onions and topped with crumbled Bulgarian
-        Feta. Served with a dressing of Olive oil and a wedge
-        of lemon
-    </p>
-    <h3>
-        <span>Warm Chicken Salad</span>
-        <span>$18.00</span>
-    </h3>
-    <p>
-        Warm chicken breast, mixed greens, fresh herbs,
-        roasted cashews, julienne vegetables dressed with
-        extra virgin olive oil
-    </p>
-</div>
-
-<div id="Dessert" class="tabcontent" style="display: none;">
-    <h2>Dessets</h2>
-    <h3>
-        <span>Nut Sundae</span>
-        <span>$12.00</span>
-    </h3>
-    <p>
-        1 scoop each of chocolate, strawberry and vanilla icecream layered with nuts and topping and finished
-        with lashings of cream & wafers
-    </p>
-    <h3>
-        <span>Rocky Road</span>
-        <span>$12.00</span>
-    </h3>
-    <p>
-        1 scoop each of chocolate, strawberry and vanilla icecream topped with marshmallows, nuts, topping and
-        cream.
-    </p>
-    <h3>
-        <span>Ole fashioned Banana Split</span>
-        <span>$12.00</span>
-    </h3>
-    <p>
-        3 scoops of vanilla icecream with ripe banana, chocolate topping, cream and sprinkled with nuts
-    </p>
-    <h3>
-        <span>Homemade crepes</span>
-        <span>$12.00</span>
-    </h3>
-    <p>
-        Served with banana and butterscotch sauce and served with vanilla icecream and cream
-    </p>
-    <h3>
-        <span>Delicious Apple Pie</span>
-        <span>$9.50</span>
-    </h3>
-    <p>
-        Served warm with vanilla icecream & cream
-    </p>
-    <h3>
-        <span>Sticky Date Pudding</span>
-        <span>$9.50</span>
-    </h3>
-    <p>
-        Served warm with homemade butterscotch sauce, vanilla icecream and cream
-    </p>
-</div>
-</section>
-
-<div class="pimg2" id="reservation">
-    <div class="ptext">
-        <span class="border">
-            Reservations
-        </span>
-    </div>
-</div>
-
-<section class="section section-dark reservation">
-
-    <div class="wrapper">
-    <div class="booking">
-        <h2>Make a Booking</h2>
-        <p>Want to make a booking? Use our form below.</p>
-    </div>
-    <div class="form">
-        <div class="top-form">
-            <div class="inner-form">
-                <div class="label">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name">
-                </div>
+    <header>
+        <nav class="topnav">
+            <div class="logo">
+                <span>Cool Spot Cafe</span>
             </div>
-            <div class="inner-form">
-                <div class="label">
-                    <label for="contact">Contact:</label>
-                    <input type="text" name="contact">
-                </div>
+            <ul>
+
+                <li><a href="#home">Home</a>
+                <li>
+                    <a href="#menu">
+                        Menus
+                    </a>
+                </li>
+                <li>
+                    <a href="#reservation">
+                        Reservations
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="handle">
+                <i class="fa fa-bars"></i>
             </div>
+        </nav>
+    </header>
+    <div class="pimg1" id="home">
+        <div class="ptext">
+            <span class="border">
+                Cool Spot Cafe
+            </span>
         </div>
-        <div class="middle-form">
-            <div class="inner-form">
-                <div class="label">
-                    <label for="time">Time:</label>
-                    <input type="datetime-local" name="time">
-                </div>
-            </div>
+    </div>
+    <section class="section section-dark">
+        <h2>About Us</h2>
+        <span>
+            Welcome to the Cool Spot Café situated at Fannie Bay. Whether you're a local or a visitor
+            I am sure you will enjoy a visit to the Cool Spot for a quick cup of coffee, tea, or a quick snack to a full meal.
+            True to its name if you want to cool down after a hot day enjoy a gelato and a cold drink in the air-conditioning.
+        </span>
+    </section>
+    <div class="pimg3" id="menu">
+        <div class="ptext">
+            <span class="border">
+                Menus
+            </span>
+        </div>
+    </div>
+    <section class="section section-light">
 
-            <div class="inner-form">
-                <div class="label">
-                    <label for="people">People:</label>
-                    <input type="number" name="people">
-                </div>
-            </div>
+        <!-- w3 schools tabs https://www.w3schools.com/howto/howto_js_tabs.asp -->
+        <div class="tab">
+            <button class="tablinks active" onclick="openMenu(event, 'Main')">Mains</button>
+            <button class="tablinks" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
+            <button class="tablinks" onclick="openMenu(event, 'Lunch')">Lunch</button>
+            <button class="tablinks" onclick="openMenu(event, 'Burgers')">Burgers</button>
+            <button class="tablinks" onclick="openMenu(event, 'Salads')">Salads</button>
+            <button class="tablinks" onclick="openMenu(event, 'Dessert')">Dessert</button>
+        </div>
+        <div id="Main" class="tabcontent" style="display: block;">
+            <h2>Main Menu</h2>
+
+            <h3>
+                <span>Riverina Black Angus Scotch Fillet Steak</span>
+                <span>$29.50</span>
+            </h3>
+            <p>
+                Grain Fed Scotch Fillet cooked to your liking and
+                served with chips, garden salad and homemade
+                mushroom sauce
+            </p>
+            <h3>
+                <span>Local Barramundi with Thai style Prawns</span>
+                <span>$32.00</span>
+            </h3>
+            <p>
+                Grilled Barramundi with panfried Local Prawns in a
+                lime, ginger & coriander glaze. Served with steamed
+                rice & broccolini
+            </p>
+            <h3>
+                <span>Local Barramundi & Chips</span>
+                <span>$28.00</span>
+            </h3>
+            <p>
+                Grilled Local Barramundi fillets served with chips,
+                garden salad and a side of our homemade herb aioli
+
+            </p>
+            <h3>
+                <span>Chicken Parmigiana</span>
+                <span>$22.00</span>
+            </h3>
+            <p>
+                Chicken Breast Schnitzel topped with homemade
+                napoli sauce and grated tasty cheese. Served with
+                chips and garden salad
+            </p>
+            <h3>
+                <span>Traditional Butter Chicken</span>
+                <span>$22.00</span>
+            </h3>
+            <p>
+                A classic mild North Indian Curry. Served with
+                steamed rice and papadums
+            </p>
+            <h3>
+                <span>Calamari & Chips</span>
+                <span>$22.00</span>
+            </h3>
+            <p>
+                Local crumbed Calamari served with homemade herb
+                aioli, lemon wedges, chips and garden salad
+            </p>
+            <h3>
+                <span>Chicken Schnitzel</span>
+                <span>$19.50</span>
+            </h3>
+            <p>
+                Chicken Breast Schnitzel served with chips, salad and
+                a side of gravy
+            </p>
+            <h3>
+                <span>Coopers Pale Ale Beer Battered Fish and Chips</span>
+                <span>$22.00</span>
+            </h3>
+            <p>
+                Freshly battered local fish served with chips, salad,
+                house tartare sauce and lemon wedges.
+                Please ask Staff for catch of the day!
+            </p>
+        </div>
+        <div id="Breakfast" class="tabcontent" style="display: none;">
+            <h2>Breakfast</h2>
+            <h3>
+                <span>Coolspot Big Breakfast</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                bacon, 2 fried eggs, sausage, tomato, mushrooms &
+                baked beans
+            </p>
+            <h3>
+                <span>Vegetarian Breakfast </span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                eggs scrambled or poached, mushrooms, spinach,
+                sliced avocado & grilled tomato
+            </p>
+            <h3>
+                <span>Eggs Benedict</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                poached eggs, fresh baby spinach, leg ham,
+                hollandaise sauce on turkish bread
+            </p>
+            <h3>
+                <span>Coolspot Omelette</span>
+                <span>$16.50</span>
+            </h3>
+            <p>
+                leg ham, tasty cheese, roasted red peppers &
+                mushrooms
+            </p>
+            <h3>
+                <span>Bacon & Egg Breakfast</span>
+                <span>$14.00</span>
+            </h3>
+            <p>
+                bacon, 2 fried, poached or scrambled eggs with grilled
+                tomato
+            </p>
+            <h3>
+                <span>Breakfast Brushetta </span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                basil & tomato mix, poached eggs, lean grilled ham off
+                the bone on toasted vienna
+            </p>
+            <h3>
+                <span>Breakfast Bowl</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                spanish poached eggs, chorizo, tomato, red pepppers
+                and fresh baby spinach
+            </p>
+            <h3>
+                <span>Fresh Seasonal Fruit Salad </span>
+                <span>$12.00</span>
+            </h3>
+            <p>
+                served with passionfruit & coconut shavings and your
+                choice of honey Cinnamon Yoghurt or Vanilla Ice
+                cream!
+            </p>
+        </div>
+        <div id="Lunch" class="tabcontent" style="display: none;">
+            <h2>Lunch</h2>
+            <h3>
+                <span>Salt & Pepper Squid</span>
+                <span>$15.00</span>
+            </h3>
+            <p>
+                served with a sweet chilli dipping sauce & homemade
+                herb aioli
+            </p>
+            <h3>
+                <span>Beef Nachos</span>
+                <span>$14.00</span>
+            </h3>
+            <p>
+                with sour cream & guacomole
+            </p>
+            <h3>
+                <span>Crispy grilled Chorizo</span>
+                <span>$14.00</span>
+            </h3>
+            <p>
+                grilled spicy chorizo served with a tomato chutney &
+                olives
+            </p>
+            <h3>
+                <span>Basil & Tomato Bruschetta</span>
+                <span>$12.00</span>
+            </h3>
+            <p>
+                basil & tomatoes on toasted vienna with balsamic
+                glaze and fresh baby spinach
+            </p>
+            <h3>
+                <span>Bacon & Egg Sandwich</span>
+                <span>$9.00</span>
+            </h3>
+            <p>
+                Served with white or multigrain bread
+            </p>
+            <h3>
+                <span>Bacon, Lettuce & Tomato</span>
+                <span>$9.00</span>
+            </h3>
+            <p>
+                Served with white or multigrain bread
+            </p>
+        </div>
+        <div id="Burgers" class="tabcontent" style="display: none;">
+            <h2>Burgers</h2>
+            <h3>
+                <span>Coolspot Hamburger with Bacon & Egg</span>
+                <span>$19.50</span>
+            </h3>
+            <p>
+                Homemade hamburger patty served with beerenberg
+                relish, bacon, fried egg, cheddar cheese, lettuce &
+                tomato
+            </p>
+            <h3>
+                <span>Coolspot Scotch Fillet Steak Burger</span>
+                <span>$19.50</span>
+            </h3>
+            <p>
+                Black Angus Scotch fillet steak with bacon, egg,
+                cheddar cheese, lettuce & tomato
+            </p>
+            <h3>
+                <span>Gourmet Chicken Burger</span>
+                <span>$19.50</span>
+            </h3>
+            <p>
+                Chicken Breast with bacon, guacamole, cheddar
+                cheese, lettuce, tomato & a side of homemade aioli
+            </p>
+            <h3>
+                <span>Chicken Schnitzel Burger</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                Chicken breast schnitzel with bacon, cheddar cheese,
+                lettuce, tomato and homemade aioli
+            </p>
+            <h3>
+                <span>Cheese Burger</span>
+                <span>$16.00</span>
+            </h3>
+            <p>
+                Homemade hamburger patty served with double
+                cheddar cheese, lettuce & tomato
+            </p>
+        </div>
+        <div id="Salads" class="tabcontent" style="display: none;">
+            <h2>Salads</h2>
+            <h3>
+                <span>Salt & Pepper Squid Salad</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                Local Squid served with mixed lettuce leaves, crunchy
+                shredded vegetabes, herb aioli and lemon wedges
+            </p>
+            <h3>
+                <span>Thai Chicken Salad</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                Marinated chicken breast with spicy sweet chilli &
+                lime dressing, fresh herbs, mixed greens, roasted
+                cashews & julienne vegetables
+            </p>
+            <h3>
+                <span>Warm Lamb Salad</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                Greek style lamb served with homemade garlic
+                yoghurt, mixed lettuce leaves, onions, tomatoes,
+                olives & toasted pita bread
+            </p>
+            <h3>
+                <span>Premium Tasmanian Smoked Salmon</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                Gourmet salad mix, toasted sesame seeds & our own
+                citrus dressing
+            </p>
+            <h3>
+                <span>Green Energy Salad topped with Bulgarian Feta</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                Sliced avocado, shredded cabbage, cherry tomatoes, a
+                julienne mix of carrot, fresh beetroot, capsicums,
+                spring onions and topped with crumbled Bulgarian
+                Feta. Served with a dressing of Olive oil and a wedge
+                of lemon
+            </p>
+            <h3>
+                <span>Warm Chicken Salad</span>
+                <span>$18.00</span>
+            </h3>
+            <p>
+                Warm chicken breast, mixed greens, fresh herbs,
+                roasted cashews, julienne vegetables dressed with
+                extra virgin olive oil
+            </p>
         </div>
 
-        <div class="bottom-form">
-            <div class="inner-form">
-                <div class="label">
-                    <label for="details">Details:</label>
-                    <textarea name="details"></textarea>
-                </div>
-            </div>
+        <div id="Dessert" class="tabcontent" style="display: none;">
+            <h2>Dessets</h2>
+            <h3>
+                <span>Nut Sundae</span>
+                <span>$12.00</span>
+            </h3>
+            <p>
+                1 scoop each of chocolate, strawberry and vanilla icecream layered with nuts and topping and finished
+                with lashings of cream & wafers
+            </p>
+            <h3>
+                <span>Rocky Road</span>
+                <span>$12.00</span>
+            </h3>
+            <p>
+                1 scoop each of chocolate, strawberry and vanilla icecream topped with marshmallows, nuts, topping and
+                cream.
+            </p>
+            <h3>
+                <span>Ole fashioned Banana Split</span>
+                <span>$12.00</span>
+            </h3>
+            <p>
+                3 scoops of vanilla icecream with ripe banana, chocolate topping, cream and sprinkled with nuts
+            </p>
+            <h3>
+                <span>Homemade crepes</span>
+                <span>$12.00</span>
+            </h3>
+            <p>
+                Served with banana and butterscotch sauce and served with vanilla icecream and cream
+            </p>
+            <h3>
+                <span>Delicious Apple Pie</span>
+                <span>$9.50</span>
+            </h3>
+            <p>
+                Served warm with vanilla icecream & cream
+            </p>
+            <h3>
+                <span>Sticky Date Pudding</span>
+                <span>$9.50</span>
+            </h3>
+            <p>
+                Served warm with homemade butterscotch sauce, vanilla icecream and cream
+            </p>
         </div>
-        <div class="button">
-            <input type="submit" name="submit"></button>
+    </section>
 
+    <div class="pimg2" id="reservation">
+        <div class="ptext">
+            <span class="border">
+                Reservations
+            </span>
         </div>
     </div>
 
+    <section class="section section-dark reservation">
 
-</section>
-<div class="pimg4" id="contact">
-    <div class="ptext">
-        <span class="border">
-            Contact
-        </span>
+        <div class="wrapper">
+            <div class="booking">
+                <h2>Make a Booking</h2>
+                <p>Want to make a booking? Use our form below.</p>
+            </div>
+            <div class="form">
+                <div class="top-form">
+                    <div class="inner-form">
+                        <div class="label">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+                    <div class="inner-form">
+                        <div class="label">
+                            <label for="contact">Contact:</label>
+                            <input type="text" name="contact">
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-form">
+                    <div class="inner-form">
+                        <div class="label">
+                            <label for="time">Time:</label>
+                            <input type="datetime-local" name="time">
+                        </div>
+                    </div>
+
+                    <div class="inner-form">
+                        <div class="label">
+                            <label for="people">People:</label>
+                            <input type="number" name="people">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-form">
+                    <div class="inner-form">
+                        <div class="label">
+                            <label for="details">Details:</label>
+                            <textarea name="details"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" name="submit"></input>
+
+                </div>
+            </div>
+            </div>
+
+    </section>
+    <div class="pimg4" id="contact">
+        <div class="ptext">
+            <span class="border">
+                Contact
+            </span>
+        </div>
     </div>
-</div>
-<section class="section section-light">
+    <section class="section section-light">
 
-    <h2>Contact Us</h2>
-    <p>
-        We are open 7 days from 7am until late, with the full menu available until 10pm.
-        If you wish to book a table give us a <a href="tel:0889818428">call</a>
-        or alternatively send us an <a href="mailto:info@coolspot.com.au">email</a>
-    </p>
-    <div class="icons">
-        <a href="https://www.facebook.com/Fannie-Bay-Cool-Spot-283342138541420/">
-            <i class="fa fa-facebook-official"></i>
-        </a>
-        <a href="tel:0889818428">
-            <i class="fa fa-phone"></i>
-        </a>
-        <a href="mailto:info@coolspot.com.au">
-            <i class="fa fa-envelope-o"></i>
-        </a>
-    </div>
-</section>
-<script>
+        <h2>Contact Us</h2>
+        <p>
+            We are open 7 days from 7am until late, with the full menu available until 10pm.
+            If you wish to book a table give us a <a href="tel:0889818428">call</a>
+            or alternatively send us an <a href="mailto:info@coolspot.com.au">email</a>
+        </p>
+        <div class="icons">
+            <a href="https://www.facebook.com/Fannie-Bay-Cool-Spot-283342138541420/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+            <a href="tel:0889818428">
+                <i class="fa fa-phone"></i>
+            </a>
+            <a href="mailto:info@coolspot.com.au">
+                <i class="fa fa-envelope-o"></i>
+            </a>
+        </div>
+    </section>
+    <script>
 
-    $('.handle').on('click',
-        function() {
-            $('nav ul').toggleClass('showing');
-        })
-</script>
+        $('.handle').on('click',
+            function () {
+                $('nav ul').toggleClass('showing');
+            })
+    </script>
 </body>
 </html>
