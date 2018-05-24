@@ -1,12 +1,60 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
 }
+header  {
+  background: #2f496e;
+  color: white;
+  font-size: 1em;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.logo{
+  color: inherit;
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline;
+  padding: 10px 15px 1px;
+  font-size: 24px;
+}
+
+nav ul {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0px;
+  text-align: right;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+
+}
+header ul li {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px 1px;
+
+}
+
+header ul li:hover {
+  text-decoration: underline;
+}
+.handle{
+  width: 100%;
+  text-align:left;
+  box-sizing: border-box;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
 
 .pimg1, .pimg2, .pimg3, .pimg4 {
     position: relative;
@@ -44,370 +92,14 @@ body, html {
 }
 
 .section-light {
-    background-color: #bce0f2;
-    color: #666;
+    background-color: #d0e1f9;
+    color: #1e1f26;
 }
 
 .section-dark {
-    background-color: #1e4356;
-    color: #ddd;
-}
-.bg-agile {
-    width: 50%;
-    margin: 0 auto;
-}
-.book-reservation {
-
-    padding: 35px;
-}
-
-
-.book-reservation label {
-    font-size: 16px;
+    background-color: #283655;
     color: #fff;
-    /* margin-bottom: 1em; */
-    text-align: left;
-    display: inline-block;
-    float: left;
-    font-weight: 500;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
 }
-.form-date-w3-agileits {
-    width: 50%;
-    float: left;
-}
-.form-time-w3layouts {
-    width: 50%;
-    float: left;
-}
-.form-left-agileits-w3layouts {
-    width: 50%;
-    float: left;
-}
-.book-reservation label i{   
-     font-size: 1em;
-    margin-right: 10px;
-    color: #a71930;
-
-}
-.book-reservation input[type="text"],.book-reservation input[type="date"],.book-reservation input[type="time"],.book-reservation input[type="email"] {
-    width: 89%;
-    color:#9a9797;
-    outline: none;
-    font-size: 1em;
-    line-height: 25px;
-    padding: 5px 10px;
-   border: 2px solid #fff;
-    -webkit-appearance: none;
-    margin-bottom: 1.5em;
-    font-family: 'Roboto', sans-serif;
-    background:none;
-}
-.book-reservation select.form-control {
-    outline: none;
-    font-size: 1em;
-    padding: 5px 10px;
-    width: 95.5%;
-    line-height: 25px;
-    border-radius: 0;
-    background: none;
-    color: #9a9797;
-    border: 2px solid #fff;
-    font-family: 'Roboto', sans-serif;
-}
-.make {
-    margin: 1em auto 0;
-    text-align: center;
-}
-.make input[type=submit] {
-    color: #FFFFFF;
-    margin-top: 3em;
-    padding: 9px 30px;
-    font-size: 1.04em;
-    cursor: pointer;
-    border: 2px solid #a71930;
-    outline: none;
-    background: #a71930;
-    font-family: 'Roboto', sans-serif;
-}
-.make input[type=submit]:hover {
-    background: none;
-    transition: 0.5s all ease;
-    -webkit-transition: 0.5s all ease;
-    -moz-transition: 0.5s all ease;
-    -o-transition: 0.5s all ease;
-    -ms-transition: 0.5s all ease;
-}
-.arrows-reserve{
-        position:relative;
-        color:#EFA52C;
-        font-size:2em;
-}
-.arrows-reserve:before{
-    content: '';
-    position: absolute;
-    bottom: 43%;
-    left: 35.5%;
-    background: #fff;
-    width: 11%;
-    height: 3px;
-}
-.arrows-reserve:after{
-     content: '';
-    position: absolute;
-  bottom: 43%;
-    right: 35.5%;
-    background: #fff;
-        width: 11%;
-    height: 3px;
-}
-
-.book-reservation form {
-    margin-top: 1px;
-}
-.book-reservation input[type="text"],.book-reservation input[type="date"],.book-reservation input[type="time"],.book-reservation input[type="email"] {
-    width: 89%;
-    color:#9a9797;
-    outline: none;
-    font-size: 1em;
-    line-height: 25px;
-    padding: 5px 10px;
-   border: 2px solid #fff;
-    -webkit-appearance: none;
-    margin-bottom: 1.5em;
-    font-family: 'Roboto', sans-serif;
-    background:none;
-}
-
-/*responsive design start*/
-
-@media(max-width:1680px){
-    
-}
-@media(max-width:1440px){
-    .bg-agile {
-        width: 60%;
-    }
-    h1 {
-        font-size: 33px;
-    }
-}
-@media(max-width:1366px){
-    
-}
-@media(max-width:1280px){
-    h1 {
-        font-size: 30px;
-        word-spacing: 3px;
-        letter-spacing: 5px;
-        margin: 1.5em 0;
-    }
-    .bg-agile {
-        width: 63%;
-    }
-    .book-reservation label {
-        font-size: 14px;
-    }
-    .make input[type=submit] {
-        margin-top: 2em;
-    }
-}
-@media(max-width:1080px){
-    .bg-agile {
-        width: 70%;
-    }
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        line-height: 22px;
-    }
-    .make input[type=submit] {
-        margin-top: 2.5em;
-        padding: 7px 24px;
-        font-size: 1.03em;
-    }
-    
-}
-@media(max-width:1050px){
-    
-}
-@media(max-width:1024px){
-    .book-reservation {
-        padding: 28px;
-    }
-    .book-reservation label {
-        font-size: 13.4px;
-        margin-left: 9px;
-        margin-bottom: 7px;
-    }
-    .book-reservation label i {
-        margin-right: 6px;
-    }
-    h1 {
-        font-size: 27px;
-    }
-}
-@media(max-width:991px){
-    .make input[type=submit] {
-        font-size: 1em;
-    }
-}
-@media(max-width:900px){
-    .book-reservation select.form-control {
-        width: 96%;
-    }
-}
-@media(max-width:800px){
-    .bg-agile {
-        width: 79%;
-    }
-  
-}
-@media(max-width:768px){
-    h1 {
-        margin: 3.5em 0;
-    }
-   
-}
-@media(max-width:767px){
-    h1 {
-        font-size: 23px;
-        word-spacing: 0px;
-        letter-spacing: 3px;
-        margin: 1.18em 0;
-    }
-    .make input[type=submit] {
-        margin-top: 2.2em;
-    }
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        margin-bottom: 1.1em;
-    }
-
-    .book-reservation {
-        padding: 28px 28px 28px;
-    }
-}
-@media(max-width:736px){
-    .bg-agile {
-        width: 80%;
-    }
-}
-@media(max-width:667px){
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        width: 86%;
-    }
-}
-@media(max-width:640px){
-    
-}
-@media(max-width:600px){
-    .bg-agile {
-        width: 90%;
-    }
-    
-}
-
-@media(max-width:480px){
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        width: 84%;
-    }
-    .make input[type=submit] {
-        padding: 5px 16px;
-        font-size: .9em;
-    }
-    h1 {
-        font-size: 20px;
-        letter-spacing: 2px;
-        margin: 1.66em 0;
-    }
-}
-@media(max-width:414px){
-    .form-date-w3-agileits {
-        width: 100%;
-        float: none;
-    }
-    .form-time-w3layouts {
-        width: 100%;
-        float: none;
-    }
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        width: 90%;
-    }
-    .form-left-agileits-w3layouts {
-        width: 100%;
-        float: none;
-    }
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        margin-bottom: 1em;
-    }
-    h1 {
-        font-size: 18px;
-        letter-spacing: 1.5px;
-        margin: 1.7em 0;
-    }
-    .bottom-w3ls {
-        margin-bottom: 1em;
-    }
-    .make input[type=submit] {
-        margin-top: 1.5em;
-    }
-    .book-reservation select.form-control {
-        width: 98%;
-    }
-    .book-reservation {
-        padding: 28px;
-    }
-}
-
-@media(max-width:375px){
-    
-}
-@media(max-width:320px){
-    .book-reservation label {
-        font-size: 11.4px;
-        margin-left: 6px;
-        margin-bottom: 6px;
-    }
-    h1 {
-        line-height: 28px;
-        margin: 1.2em 0 1em;
-    }
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        font-size: 14px;
-    }
-    .book-reservation {
-        padding: 25px;
-    }
-    .book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
-        width: 89%;
-    }
-    .book-reservation select.form-control {
-        width: 100%;
-    }
-    .make input[type=submit] {
-        margin-top: 1em;
-    }
-    .copy.w3ls {
-        margin: 1em 1.5em;
-    }
-}
-/*responsive desing upto this*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .ptext {
     position: absolute;
@@ -420,8 +112,9 @@ body, html {
     text-transform: uppercase;
 }
 
+
 .ptext .border {
-    background-color: #3594c4;
+    background-color: #2f496e;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -442,16 +135,17 @@ a {
 
 .tab{
   overflow: hidden;
-  background: #bce0f2;
+
   }
 
   .tablinks{
     color: inherit;
-
+    font-weight: bold;
   }
 
-  .tablinks:active{
-     background: #ccc;
+  .tablinks.active{
+     background: #283655;
+     color: white;
   }
 
   .tab button{
@@ -461,14 +155,109 @@ a {
     border: none;
     outline: 1px solid #ccc;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 15px;
+    font-size: 15px;
     transition: 0.3s;
   }
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.wrapper{
+  width: 100%;
+  margin:auto;
+  max-width: 550px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.label {
+  margin: auto;
+  text-align: left;
+}
+
+input{
+  width: 100%;
+}
+textarea{
+  width: 100%;
+  min-height: 70px;
+}
+
+label{
+  padding: 10px 0;
+}
+
+.form{
+  width: 100%;
+  margin: 25px 0;
+}
+
+.top-form, .middle-form, .bottom-form{
+  width: 100%;
+  min-height: 65px;
+  margin: 10px;
+}
+.inner-form{
+  padding: 5px 0;
+}
+
+input[type=submit] {
+  background-color: #d0e1f9;
+  color: #1e1f26;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media(max-width: 675px) {
+  nav ul{
+    max-height: 0;
+  }
+    nav ul li{
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+    }
+    .showing{
+      max-height: 20em;
+    }
+    .logo{
+      display: none;
+    }
+    .handle{
+      display: block;
+      text-align: right;
+      }
+
+    .tablinks{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: black;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
         /* enable Parallax Scroll for pc*/
-        @media(min-width: 568px) {
+        @media(min-width: 580px) {
             .pimg1, .pimg2, .pimg3, .pimg4 {
                 background-attachment: fixed;
             }
+
         }
 
         @media(max-width: 380px) {
